@@ -2,6 +2,8 @@
 
 [中文](README.md) | English
 
+[☕ Buy me a coffee: WeChat Pay / Alipay / USDT (BSC)](SPONSOR.md)
+
 A Windows desktop language tool for Japanese-market Sony cameras. Switch between Chinese and English in the top-right selector. The desktop language is independent from the option that enables Chinese on the camera.
 
 **Writing is currently limited to ILCE-7CM2, firmware 2.01, Japanese J1 configuration.** The new product name does not imply support for every Sony camera. Detection can attempt model/version queries on other Sony MSC cameras, but compatibility with those devices remains unverified. Successful detection does not authorize writes.

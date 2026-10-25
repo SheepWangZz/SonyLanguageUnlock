@@ -11,8 +11,13 @@ sys.path.insert(0, str(root))
 from language_tool import __version__
 dist = root / 'dist'
 app = dist / 'SonyLanguageUnlock'
-for name in ('README.md', 'README.en.md', 'GITHUB_UPLOAD.md', 'THIRD_PARTY.md', 'VALIDATION.md', 'FONT_COMPARISON.md'):
+for name in ('README.md', 'README.en.md', 'GITHUB_UPLOAD.md', 'THIRD_PARTY.md', 'VALIDATION.md', 'FONT_COMPARISON.md', 'SPONSOR.md'):
     shutil.copyfile(root / name, app / name)
+
+sponsor_assets = app / 'assets' / 'sponsor'
+sponsor_assets.mkdir(parents=True, exist_ok=True)
+for name in ('wechat.jpg', 'alipay.jpg', 'usdt-bsc.png'):
+    shutil.copyfile(root / 'assets' / 'sponsor' / name, sponsor_assets / name)
 
 
 def check_name(path, original):

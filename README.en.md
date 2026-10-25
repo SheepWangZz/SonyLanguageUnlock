@@ -2,7 +2,7 @@
 
 [中文](README.md) | English
 
-[☕ Buy me a coffee: WeChat Pay / Alipay / USDT (BSC)](SPONSOR.md)
+[☕ Buy me a coffee: WeChat Pay / Alipay / USDT (BSC)](#support)
 
 A Windows desktop language tool for Japanese-market Sony cameras. Switch between Chinese and English in the top-right selector. The desktop language is independent from the option that enables Chinese on the camera.
 
@@ -60,3 +60,23 @@ python dev/package_release.py
 ```
 
 Tests prohibit USB enumeration and use synthetic camera data. Packages exclude firmware, Sony fonts, build caches, and private camera snapshots. See [validation](VALIDATION.md), [font research](FONT_COMPARISON.md), [third-party components](THIRD_PARTY.md), and [GitHub publishing instructions](GITHUB_UPLOAD.md).
+
+## Support
+
+If this project helped you, consider buying me a coffee ☕. Support is optional and does not unlock features or guarantee paid services or compatibility.
+
+| WeChat Pay | Alipay | USDT · BSC (BEP20) |
+|:---:|:---:|:---:|
+| <a href="assets/sponsor/wechat.jpg"><img src="assets/sponsor/wechat.jpg" width="220" alt="WeChat Pay receiving QR code"></a> | <a href="assets/sponsor/alipay.jpg"><img src="assets/sponsor/alipay.jpg" width="220" alt="Alipay receiving QR code"></a> | <a href="assets/sponsor/usdt-bsc.png"><img src="assets/sponsor/usdt-bsc.png" width="220" alt="USDT BSC address QR code"></a> |
+
+Click an image for the original. Confirm the recipient before paying through WeChat or Alipay.
+
+**USDT receiving address — BSC / BEP20 only:**
+
+```text
+0x13be5b77a05bdff880a6cc4f909dc9ae68a58908
+```
+
+**The QR code contains the address only; it does not select the token or network. Manually select USDT and BNB Smart Chain (BSC / BEP20), and verify the full address.** Binance's current minimum deposit and deposit availability requirements apply.
+
+[Full sponsorship details / 完整赞助说明](SPONSOR.md)

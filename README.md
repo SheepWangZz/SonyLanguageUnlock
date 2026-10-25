@@ -2,7 +2,7 @@
 
 中文 | [English](README.en.md)
 
-[☕ 请我喝杯咖啡：微信 / 支付宝 / USDT（BSC）](SPONSOR.md)
+[☕ 请我喝杯咖啡：微信 / 支付宝 / USDT（BSC）](#赞助)
 
 面向日版 Sony 相机的 Windows 桌面语言工具。程序内可切换中文 / English；电脑端界面语言与相机中文解锁选项互相独立。
 
@@ -63,3 +63,23 @@ Windows 两个相机接口统一绑定 WinUSB，程序使用随包 libusb1，不
 
 
 测试禁止 USB 枚举；设备查询使用模拟传输，配置使用合成 BK4。最终构建见 `dist/`。固件、字体、构建缓存与机身私有快照不进入源代码发行包。详见 [验证记录](VALIDATION.md)、[字体比较](FONT_COMPARISON.md)、[第三方来源](THIRD_PARTY.md) 和 [GitHub 上传教学](GITHUB_UPLOAD.md)。
+
+## 赞助
+
+如果这个项目帮到了你，欢迎请我喝杯咖啡 ☕。赞助完全自愿，不影响功能使用，也不代表付费服务或兼容性保证。
+
+| 微信 | 支付宝 | USDT · BSC（BEP20） |
+|:---:|:---:|:---:|
+| <a href="assets/sponsor/wechat.jpg"><img src="assets/sponsor/wechat.jpg" width="220" alt="微信收款码"></a> | <a href="assets/sponsor/alipay.jpg"><img src="assets/sponsor/alipay.jpg" width="220" alt="支付宝收款码"></a> | <a href="assets/sponsor/usdt-bsc.png"><img src="assets/sponsor/usdt-bsc.png" width="220" alt="USDT BSC 地址二维码"></a> |
+
+点击图片查看原图；微信、支付宝付款前请核对收款人。
+
+**USDT 收款地址（仅限 BSC / BEP20）：**
+
+```text
+0x13be5b77a05bdff880a6cc4f909dc9ae68a58908
+```
+
+**二维码只包含地址，不会自动选择币种或网络。请手动选择 USDT 和 BNB Smart Chain（BSC / BEP20），并核对完整地址。** 最低充值金额和充值可用状态以币安当前要求为准。
+
+[查看完整赞助说明 / Full sponsorship details](SPONSOR.md)

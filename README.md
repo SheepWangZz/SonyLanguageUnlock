@@ -19,8 +19,6 @@
 - 点击“开始解锁”。程序重新读取设备信息、绑定同一机身，再执行语言配置和所选字体恢复；运行中保持连接和供电。
 - 完成后断开 USB，关机再开机，滚动语言菜单并实际检查所选语言。确认正常后重新连接 MSC，勾选重启确认，再点击“重启后只读核对”。
 
-界面没有“第一步／第二步”等编号，也没有中文资源来源单选框。发行包不再包含 Sony LTT / TTF；中文模式必须由用户选择固件包。
-
 ## Zadig 驱动设置
 
 以下 USB ID 已在 ILCE-7CM2 上核对，不代表所有 Sony 机型都使用相同 ID。
@@ -49,18 +47,6 @@
 
 支持的语言配置为 35 个属性；不选中文时启用其余 33 项并关闭两项中文。中文模式先解除所需属性保护、启用语言、恢复保护，再补齐两份中文 LTT 和图标 TTF；已有且字节一致的文件跳过，已有但不一致的文件停止覆盖。
 
-字体来源固定验证如下，不能借用到其他型号：
-
-| 文件 | 字节数 | SHA-256 |
-|---|---:|---|
-| `MYingHeiC-GB18030-SJ_wIcon.ltt` | 2054740 | `a8afccc2e226d5a519f3698796c2a76a0ad6e163f7e5fc9e35d5e89d58db3276` |
-| `MYingHeiC-Big5-SJ_wIcon.ltt` | 1150740 | `25f3afa8008c6d038e5bf61582c06539a70786a2de1c74fe63e73814d468ab9f` |
-| `Sony_DI_Icons.ttf` | 622344 | `f4957fda675cad6c118c91297ed53828fbe4ef0ea28bc50ae2db3458bc5341c2` |
-
-三份目标均在相机 `/tmp/images/`。官方 2.01 DAT 大小为 `1139929560`，SHA-256 为 `eb4943e6099754d64deaef5047942e9bfe258f232d0b7bc39fa23b3cd10e1e31`。已知固件按完整文件哈希识别版本，其他可解析的 DAT 仅显示元信息，不自动允许写入。不会根据文件名判断版本。
-
-ILCE-7CM2 的检测会临时切换服务连接，只读取固件版本文件和机身配置以核对身份，然后返回普通 USB。只读保护禁止配置和字体写入；不发送固件升级命令。连续服务连接之间至少间隔 30 秒。其他机型仅尝试型号查询及版本查询初始化／查询。开始写入前再次检测型号、版本和机身身份；进入服务连接后再核对机身身份、固件及地区配置。无 ID1 命令、无 `libsencore.so` 修改、无任意文件写入或删除接口。
-
 ## 记录与失败处理
 
 点击“打开本机记录”查看日志。新安装默认使用 `%LOCALAPPDATA%/SonyLanguageUnlock`。若存在旧版 `%LOCALAPPDATA%/A7C2LanguageTool`，继续使用旧目录，保留未完成操作标记，不因更名绕过重试限制。
@@ -73,16 +59,5 @@ Windows 两个相机接口统一绑定 WinUSB，程序使用随包 libusb1，不
 
 0.3.2 的双 WinUSB 只读检测已在 ILCE-7CM2 / 2.01 实机通过：读取型号、版本和机身身份，自动恢复普通 USB，配置及文件写入次数为零。61 项离线测试通过。**完整 GUI 解锁写入流程尚未重新验证，单次检测成功也不代表所有连接状态均可靠。** 此前人工恢复流程成功由用户报告。升级固件后是否要重复操作仍未测试。英文界面覆盖操作控件、流程提示和常规进度；底层库或未映射的技术错误保留原文并注明 Technical details。
 
-## 开发
-
-Windows x64 / Python 3.12，包含 tkinter：
-
-```powershell
-python -m pip install -r requirements-dev.txt
-python -m pytest -q
-python app.py --self-test ui-check.json
-./build.ps1 -Python python
-python dev/package_release.py
-```
 
 测试禁止 USB 枚举；设备查询使用模拟传输，配置使用合成 BK4。最终构建见 `dist/`。固件、字体、构建缓存与机身私有快照不进入源代码发行包。详见 [验证记录](VALIDATION.md)、[字体比较](FONT_COMPARISON.md)、[第三方来源](THIRD_PARTY.md) 和 [GitHub 上传教学](GITHUB_UPLOAD.md)。

@@ -19,8 +19,6 @@ Extract the complete Windows ZIP, keep `_internal` beside the executable, and ru
 - Click **Start unlock**. The app queries the camera again and binds the operation to the same body, then applies the language settings and selected font restoration. Maintain USB connection and power.
 - Disconnect USB, power the camera off and on, and check the language menus. Reconnect in MSC mode, tick the restart confirmation, then click **Read-only check after restart**.
 
-There is no resource-source selector or numbered-step heading. Sony font files are not bundled; Chinese mode requires a user-selected package.
-
 ## Zadig driver setup
 
 Verified ILCE-7CM2 IDs: normal MSC **054C:0E8A**, service mode **054C:0336**. Both require WinUSB in 0.3.2; do not assume these IDs apply to every Sony model. Close camera tools, connect only the target camera in MSC mode, and record the previous driver.

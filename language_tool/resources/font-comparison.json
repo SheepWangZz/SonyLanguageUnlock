@@ -1,0 +1,166 @@
+{
+  "versions": {
+    "1.01": {
+      "version": "1.01",
+      "model": "ILCE-7CM2",
+      "model_code": "0x20030014",
+      "source_url": "https://support.d-imaging.sony.co.jp/download/NEX/OUcm2ZA4wE/BODYDATA.DAT?fm=am",
+      "firmware_bytes": 1041261016,
+      "firmware_sha256": "53bf899210cdc9d83574c114bb5771c31c6166fbbabd878f966c30db0af2e7cf",
+      "decoder": "CXD90057_k8",
+      "fonts": {
+        "/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt": {
+          "bytes": 1150740,
+          "sha256": "265cbfec60e6f71d169d92027e75e0e2f8737afe1b26f9ab2efce4cb6ef9137d"
+        },
+        "/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt": {
+          "bytes": 1958432,
+          "sha256": "46a34ce3a891a4b1b260b79071da6b806f7a5c3bfc08be0691fb2d6e13e2e8d2"
+        },
+        "/tmp/images/Sony_DI_Icons.ttf": {
+          "bytes": 619208,
+          "sha256": "e87fd06c1b0145cd8731af395a435531bc185371bc9e4345171f55a2d912521b"
+        }
+      }
+    },
+    "1.02": {
+      "version": "1.02",
+      "model": "ILCE-7CM2",
+      "model_code": "0x20030014",
+      "source_url": "https://support.d-imaging.sony.co.jp/download/NEX/7cm2kgTyEu/BODYDATA.DAT?fm=am",
+      "firmware_bytes": 1042188760,
+      "firmware_sha256": "9e53d7f7914b1518b842836e800221f64c139116a47ced53c18d842ca7106913",
+      "decoder": "CXD90057_k8",
+      "fonts": {
+        "/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt": {
+          "bytes": 1150740,
+          "sha256": "265cbfec60e6f71d169d92027e75e0e2f8737afe1b26f9ab2efce4cb6ef9137d"
+        },
+        "/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt": {
+          "bytes": 1958432,
+          "sha256": "46a34ce3a891a4b1b260b79071da6b806f7a5c3bfc08be0691fb2d6e13e2e8d2"
+        },
+        "/tmp/images/Sony_DI_Icons.ttf": {
+          "bytes": 619208,
+          "sha256": "e87fd06c1b0145cd8731af395a435531bc185371bc9e4345171f55a2d912521b"
+        }
+      }
+    },
+    "2.00": {
+      "version": "2.00",
+      "model": "ILCE-7CM2",
+      "model_code": "0x20030014",
+      "source_url": "https://support.d-imaging.sony.co.jp/download/NEX/jL801e5ec9/BODYDATA.DAT?fm=am",
+      "firmware_bytes": 1139212760,
+      "firmware_sha256": "b7f8a98c11c51c939bf08611cfa461c1ec698c689f8fae05321e97bcbf1b59f8",
+      "decoder": "CXD90057_k8",
+      "fonts": {
+        "/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt": {
+          "bytes": 1150740,
+          "sha256": "25f3afa8008c6d038e5bf61582c06539a70786a2de1c74fe63e73814d468ab9f"
+        },
+        "/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt": {
+          "bytes": 2054740,
+          "sha256": "a8afccc2e226d5a519f3698796c2a76a0ad6e163f7e5fc9e35d5e89d58db3276"
+        },
+        "/tmp/images/Sony_DI_Icons.ttf": {
+          "bytes": 622344,
+          "sha256": "f4957fda675cad6c118c91297ed53828fbe4ef0ea28bc50ae2db3458bc5341c2"
+        }
+      }
+    },
+    "2.01": {
+      "version": "2.01",
+      "model": "ILCE-7CM2",
+      "model_code": "0x20030014",
+      "source_url": "https://support.d-imaging.sony.co.jp/download/NEX/uua3b90658/BODYDATA.DAT?fm=jp",
+      "firmware_bytes": 1139929560,
+      "firmware_sha256": "eb4943e6099754d64deaef5047942e9bfe258f232d0b7bc39fa23b3cd10e1e31",
+      "decoder": "CXD90057_k8",
+      "fonts": {
+        "/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt": {
+          "bytes": 1150740,
+          "sha256": "25f3afa8008c6d038e5bf61582c06539a70786a2de1c74fe63e73814d468ab9f"
+        },
+        "/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt": {
+          "bytes": 2054740,
+          "sha256": "a8afccc2e226d5a519f3698796c2a76a0ad6e163f7e5fc9e35d5e89d58db3276"
+        },
+        "/tmp/images/Sony_DI_Icons.ttf": {
+          "bytes": 622344,
+          "sha256": "f4957fda675cad6c118c91297ed53828fbe4ef0ea28bc50ae2db3458bc5341c2"
+        }
+      }
+    }
+  },
+  "comparison": {
+    "/tmp/images/MYingHeiC-GB18030-SJ_wIcon.ltt": {
+      "1.01": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 1958432,
+        "sha256": "46a34ce3a891a4b1b260b79071da6b806f7a5c3bfc08be0691fb2d6e13e2e8d2"
+      },
+      "1.02": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 1958432,
+        "sha256": "46a34ce3a891a4b1b260b79071da6b806f7a5c3bfc08be0691fb2d6e13e2e8d2"
+      },
+      "2.00": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 2054740,
+        "sha256": "a8afccc2e226d5a519f3698796c2a76a0ad6e163f7e5fc9e35d5e89d58db3276"
+      },
+      "2.01": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 2054740,
+        "sha256": "a8afccc2e226d5a519f3698796c2a76a0ad6e163f7e5fc9e35d5e89d58db3276"
+      }
+    },
+    "/tmp/images/MYingHeiC-Big5-SJ_wIcon.ltt": {
+      "1.01": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 1150740,
+        "sha256": "265cbfec60e6f71d169d92027e75e0e2f8737afe1b26f9ab2efce4cb6ef9137d"
+      },
+      "1.02": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 1150740,
+        "sha256": "265cbfec60e6f71d169d92027e75e0e2f8737afe1b26f9ab2efce4cb6ef9137d"
+      },
+      "2.00": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 1150740,
+        "sha256": "25f3afa8008c6d038e5bf61582c06539a70786a2de1c74fe63e73814d468ab9f"
+      },
+      "2.01": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 1150740,
+        "sha256": "25f3afa8008c6d038e5bf61582c06539a70786a2de1c74fe63e73814d468ab9f"
+      }
+    },
+    "/tmp/images/Sony_DI_Icons.ttf": {
+      "1.01": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 619208,
+        "sha256": "e87fd06c1b0145cd8731af395a435531bc185371bc9e4345171f55a2d912521b"
+      },
+      "1.02": {
+        "equal_bytes_to_2_01": false,
+        "bytes": 619208,
+        "sha256": "e87fd06c1b0145cd8731af395a435531bc185371bc9e4345171f55a2d912521b"
+      },
+      "2.00": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 622344,
+        "sha256": "f4957fda675cad6c118c91297ed53828fbe4ef0ea28bc50ae2db3458bc5341c2"
+      },
+      "2.01": {
+        "equal_bytes_to_2_01": true,
+        "bytes": 622344,
+        "sha256": "f4957fda675cad6c118c91297ed53828fbe4ef0ea28bc50ae2db3458bc5341c2"
+      }
+    }
+  },
+  "camera_access": false,
+  "font_equality_does_not_prove_unlock_compatibility": true
+}

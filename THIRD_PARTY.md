@@ -1,0 +1,9 @@
+# Sources and third-party components
+
+- [Sony-PMCA-RE](https://github.com/ma1co/Sony-PMCA-RE): selected MIT-licensed Python modules for USB authentication, USB drivers and the BK4 parser. License: `licenses/Sony-PMCA-RE.txt`. Vendored source retains upstream headers.
+- [fwtool.py](https://github.com/ma1co/fwtool.py): selected MIT-licensed DAT/FDAT parser and decryption modules. License: `licenses/sony-firmware-tools.txt`.
+- [a7c2-fl23-research](https://github.com/QAQLeonard/a7c2-fl23-research), reviewed at `ef7db116e13e37be91e9af20360dc9bba8d64a9b`: design reference for separating offline preparation, per-camera evidence, readback and write operations. This standalone application is not integrated into that repository. No desktopapp or camera_runtime application source from that project is included; the vendored upstream MIT modules are attributed above.
+- Runtime dependencies: PyUSB 1.3.1 (BSD-3-Clause), libusb-package 1.0.30.0 (Apache-2.0), bundled libusb (LGPL-2.1-or-later), PyCryptodome / pycryptodomex 3.24.1 (BSD / public-domain components), Python / Tcl / Tk, and PyInstaller bootloader (GPL with distribution exception). Their license files accompany the build.
+- libusb is a separate dynamically loaded library. Its corresponding upstream source is [libusb v1.0.30](https://github.com/libusb/libusb/tree/v1.0.30); packaging source is [libusb-package](https://github.com/pyocd/libusb-package). The distributed DLL can be replaced by a compatible build. See `licenses/libusb-COPYING.txt`.
+
+This document does not imply upstream endorsement or verification of this new standalone workflow. Version 0.3.0 requires the user to select their firmware package and does not distribute Sony LTT/TTF files, complete firmware images, or private camera snapshots. Pinned resource hashes and research provenance remain in `FONT_COMPARISON.md`. Font rights remain with their respective owners; the MIT licenses of the parsing libraries do not cover fonts.

@@ -1,0 +1,15 @@
+.build/
+build/
+dist/
+__pycache__/
+.pytest_cache/
+*.private.bin
+*.zip
+*.DAT
+*.dat
+*.ltt
+*.ttf
+*.private.*
+language_tool/resources/fonts/
+.env
+.venv/
